@@ -70,5 +70,5 @@ const Layout = ({ pageTitle, children }) => {
     </div>
   );
 };
-export { footer, footerContent, footerLink };
+
 export default Layout;
