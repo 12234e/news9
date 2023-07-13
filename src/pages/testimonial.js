@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-
+import Seo from '../components/seo'
 const TestimonialPage = () => {
   return (
     <Layout pageTitle="Testimonial">
@@ -8,7 +8,6 @@ const TestimonialPage = () => {
     </Layout>
   )
 }
-
-export const Head = () => <title>TestimonialPage</title>
+export const Head = () => <Seo title="Testimonial page" />
 
 export default TestimonialPage

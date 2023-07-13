@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-
+import Seo from '../components/seo'
 const ContactPage = () => {
   return (
     <Layout pageTitle="Contact Page">
@@ -9,6 +9,6 @@ const ContactPage = () => {
   )
 }
 
-export const Head = () => <title>ContactPage</title>
+export const Head = () => <Seo title="Contact page" />
 
 export default ContactPage
