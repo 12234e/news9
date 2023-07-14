@@ -54,6 +54,18 @@ body {
   color: yellow;
 }
 
+.menuButton {
+  /* Add your styles for the menu button here */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem; /* Change this to 'left' to position the button on the left side of the screen */
+}
+
 
 
 p {

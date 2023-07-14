@@ -1,5 +1,8 @@
 import * as React from "react";
+import { useState } from "react";
 import { Link, useStaticQuery, graphql } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faUser, faEnvelope, faBlog, faCommentDots, faBars } from '@fortawesome/free-solid-svg-icons'
 
 import {
   container,
@@ -11,10 +14,12 @@ import {
   footer,
   footerContent,
   footerLink,
-  siteTitle
+  siteTitle,
+  menuButton
 } from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -27,31 +32,34 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div className={container}>
       <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-      <nav className={header}>
+      <button className={menuButton} onClick={() => setMenuOpen(!menuOpen)}>
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+      <nav className={header} style={{ display: menuOpen ? 'block' : 'none' }}>
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
-              Home
+              <FontAwesomeIcon icon={faHome} />
             </Link>
           </li>
           <li>
             <Link to="/about" className={navLinkText}>
-              About
+              <FontAwesomeIcon icon={faUser} />
             </Link>
           </li>
           <li>
             <Link to="/contact" className={navLinkText}>
-              Contact
+              <FontAwesomeIcon icon={faEnvelope} />
             </Link>
           </li>
           <li>
             <Link to="/blog" className={navLinkText}>
-              Blog
+              <FontAwesomeIcon icon={faBlog} />
             </Link>
           </li>
           <li>
             <Link to="/testimonial" className={navLinkText}>
-              Testimonial
+              <FontAwesomeIcon icon={faCommentDots} />
             </Link>
           </li>
         </ul>
