@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://gatsbymemain.gatsbyjs.io/`,
+    siteUrl: `https://news9commain.gatsbyjs.io/`,
     title: "News 9",
   },
   plugins: [
