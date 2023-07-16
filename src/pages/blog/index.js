@@ -39,6 +39,12 @@ export const query = graphql`
   }
 `
 
-export const Head = () => <Seo title="My Blog Posts" />
+export const Head = () => (
+  <Seo
+    title="My Blog Posts"
+    description="Stay up-to-date with the latest headlines and breaking news from News9Main. Our top stories cover current events from around the world."
+  />
+);
+
 
 export default BlogPage

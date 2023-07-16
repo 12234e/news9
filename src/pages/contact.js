@@ -9,6 +9,12 @@ const ContactPage = () => {
   )
 }
 
-export const Head = () => <Seo title="Contact page" />
+export const Head = () => (
+  <Seo
+    title="Contact page"
+    description="Stay up-to-date with the latest headlines and breaking news from News9Main. Our top stories cover current events from around the world."
+  />
+);
+
 
 export default ContactPage

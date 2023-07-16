@@ -9,6 +9,11 @@ const AboutPage = () => {
   )
 }
 
-export const Head = () => <Seo title="About Me" />
+export const Head = () => (
+  <Seo
+    title="About Me"
+    description="Stay up-to-date with the latest headlines and breaking news from News9Main. Our top stories cover current events from around the world."
+  />
+);
 
 export default AboutPage
