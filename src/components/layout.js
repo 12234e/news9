@@ -1,10 +1,17 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
-import { useStaticQuery, graphql } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faBlog, faCommentDots, faBars } from '@fortawesome/free-solid-svg-icons'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { TransitionPortal } from 'gatsby-plugin-transition-link';
+import { useStaticQuery, graphql } from "gatsby";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faBlog,
+  faCommentDots,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { TransitionPortal } from "gatsby-plugin-transition-link";
 import {
   container,
   heading,
@@ -16,7 +23,7 @@ import {
   footerContent,
   footerLink,
   siteTitle,
-  menuButton
+  menuButton,
 } from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
@@ -35,15 +42,15 @@ const Layout = ({ pageTitle, children }) => {
         }
       }
     }
-  `)
+  `);
   return (
     <div className={container}>
       <TransitionPortal>
         {isLoading ? (
           <div
             style={{
-              position: 'fixed',
-              background: 'black',
+              position: "fixed",
+              background: "black",
               top: 0,
               left: 0,
               right: 0,
@@ -57,7 +64,7 @@ const Layout = ({ pageTitle, children }) => {
       <button className={menuButton} onClick={() => setMenuOpen(!menuOpen)}>
         <FontAwesomeIcon icon={faBars} />
       </button>
-      <nav className={header} style={{ display: menuOpen ? 'block' : 'none' }}>
+      <nav className={header} style={{ display: menuOpen ? "block" : "none" }}>
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <AniLink paintDrip to="/" className={navLinkText} duration={1}>
@@ -70,7 +77,12 @@ const Layout = ({ pageTitle, children }) => {
             </AniLink>
           </li>
           <li>
-            <AniLink paintDrip to="/contact" className={navLinkText} duration={1}>
+            <AniLink
+              paintDrip
+              to="/contact"
+              className={navLinkText}
+              duration={1}
+            >
               <FontAwesomeIcon icon={faEnvelope} />
             </AniLink>
           </li>
@@ -80,7 +92,12 @@ const Layout = ({ pageTitle, children }) => {
             </AniLink>
           </li>
           <li>
-            <AniLink paintDrip to="/testimonial" className={navLinkText} duration={1}>
+            <AniLink
+              paintDrip
+              to="/testimonial"
+              className={navLinkText}
+              duration={1}
+            >
               <FontAwesomeIcon icon={faCommentDots} />
             </AniLink>
           </li>
@@ -94,7 +111,9 @@ const Layout = ({ pageTitle, children }) => {
         <div className={footerContent}>
           <p>Email: contact@example.com</p>
           <p>Phone: +1-234-567-8901</p>
-          <AniLink paintDrip to="/" className={footerLink} duration={1}>Go^ Back to Home</AniLink>
+          <AniLink paintDrip to="/" className={footerLink} duration={1}>
+            Go^ Back to Home
+          </AniLink>
         </div>
       </footer>
     </div>

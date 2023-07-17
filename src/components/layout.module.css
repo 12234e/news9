@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: aqua;
+  background-color: rgb(130, 138, 138);
   border-bottom: solid thin rgb(0, 0, 11);
 }
 .header {

@@ -22,6 +22,11 @@ const ContactPage = () => {
     to: { transform: "translateX(0)" },
   });
 
+  const slideInStyles = useSpring({
+    from: { transform: 'translateX(100%)' },
+    to: { transform: 'translateX(0)' },
+  });
+
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -54,13 +59,17 @@ const ContactPage = () => {
             src="../images/contact.jpg"
             width={300}
             height={200}
+            style={{
+              boxShadow: "0px 0px 10px 5px rgba(0, 0, 0, 0.2)",
+              borderRadius: "10px",
+            }}
           />
         </animated.div>
         <animated.div className="contact-form" style={formStyles}>
           <p>
             Welcome to my website! I'm so glad you're here. If you have any
-            questions or comments, please don't hesitate to reach out using 
-            <br/>
+            questions or comments, please don't hesitate to reach out using
+            <br />
             the contact form below. I'd love to hear from you!
             <br />
             remember don't upload any file more then 50kb otherwise the file
@@ -91,13 +100,15 @@ const ContactPage = () => {
       </div>
       {isSubmitting && (
         <div className="loading-animation">
-          <p>Loading...</p>
+          <p>Sending...</p>
         </div>
       )}
       {showAnimation && (
-        <div className="success-message">
-          <p>Your message has been sent successfully!</p>
-        </div>
+        <animated.div style={slideInStyles}>
+          <div className="success-message">
+            <p>Your message has been sent successfully✅</p>
+          </div>
+        </animated.div>
       )}
     </Layout>
   );
