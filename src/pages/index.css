@@ -1,31 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-section {
-  flex: 1;
-  box-sizing: border-box;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: lightblue;
-  margin: 10px;
+.container section {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-.my-image {
-  max-width: 100%;
-  text-align: center;
+.container section h1 {
+  color: #333;
 }
 
-
-@media screen and (max-width: 600px) {
-  section {
-    width: calc(100% / 2);
-  }
+.container section p {
+  color: #555;
 }
-
-@media screen and (max-width: 400px) {
-  section {
-    width: calc(100% / 1);
+@media (max-width: 768px) {
+  .container section {
+    width: 100%;
   }
 }
