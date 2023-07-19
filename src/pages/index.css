@@ -1,26 +1,54 @@
-body {
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  max-width: 1200px;
+.index-page .container {
+  max-width: 800px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
-.container section {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+.index-page section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container section h1 {
-  color: #333;
+.index-page h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.container section p {
-  color: #555;
+.index-page p {
+  line-height: 1.5;
 }
-@media (max-width: 768px) {
-  .container section {
-    width: 100%;
+
+.index-page .my-image {
+  margin-top: 1rem;
+}
+
+.index-page a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.index-page a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .index-page .container {
+    max-width: 100%;
   }
+
+  .index-page section {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+
+  .index-page h1 {
+    font-size: 1.25rem;
+  }
+
+.index-page .my-image {
+    width:100%;
+    height:auto;
+}
 }
