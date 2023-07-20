@@ -75,7 +75,7 @@ const ContactPage = () => {
             remember don't upload any file more then 50kb otherwise the file
             Cannot send to our database.
           </p>
-          <form ref={form} onSubmit={sendEmail} enctype="multipart/form-data">
+          <form ref={form} onSubmit={sendEmail} encType="multipart/form-data">
             <input
               type="text"
               name="user_name"
