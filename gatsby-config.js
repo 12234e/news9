@@ -11,6 +11,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-transition-link",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-scroll-reveal",
     {
       resolve: "gatsby-source-filesystem",
       options: {

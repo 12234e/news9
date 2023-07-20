@@ -56,7 +56,7 @@ const ContactPage = () => {
         <animated.div className="contact-image" style={imageStyles}>
           <StaticImage
             alt="contact"
-            src="../images/contact.jpg"
+            src="../images/news9.jpg"
             width={300}
             height={200}
             style={{
