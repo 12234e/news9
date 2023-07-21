@@ -98,8 +98,8 @@ const Layout = ({ pageTitle, children }) => {
       </main>
       <footer className={footer}>
         <div className={footerContent}>
-          <p>Email: contact@example.com</p>
-          <p>Phone: +1-234-567-8901</p>
+          <p>Email: mdalaminkhan19957@gmail.com</p>
+          <p>Phone: +9660509918244</p>
           <AniLink paintDrip to="/" className={footerLink} duration={1}>
             Go^ Back to Home
           </AniLink>

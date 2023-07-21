@@ -5,7 +5,7 @@ import { graphql, Link } from 'gatsby'
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="My Blog Posts">
+    <Layout pageTitle="Latest news">
       {
         data.allMdx.nodes.map((node) => (
           <article key={node.id}>
@@ -41,7 +41,7 @@ export const query = graphql`
 
 export const Head = () => (
   <Seo
-    title="My Blog Posts"
+    title="Latest news"
     description="Stay up-to-date with the latest headlines and breaking news from News9Main. Our top stories cover current events from around the world."
   />
 );

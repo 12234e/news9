@@ -19,7 +19,7 @@ const IndexPage = () => {
         <div className="container">
           <section className="lifestyle-section">
             <h1>
-              <Link to="/blog/another-post/">Lifestyle</Link>
+              <Link to="/blog/lifestyle/">Lifestyle</Link>
             </h1>
             <div>
               <p>

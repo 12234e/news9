@@ -7,7 +7,7 @@ import Seo from '../../components/seo'
 const BlogPost = ({ data, children }) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
   return (
-    <Layout pageTitle="Super Cool Blog Posts">
+    <Layout pageTitle="Latest News">
       <p>Posted: {data.mdx.frontmatter.date}</p>
       <GatsbyImage
         image={image}
@@ -45,7 +45,7 @@ export const query = graphql`
 `
 export const Head = () => (
   <Seo
-    title="Super Cool Blog Posts"
+    title="Latest News"
     description="Stay up-to-date with the latest headlines and breaking news from News9Main. Our top stories cover current events from around the world."
   />
 );
