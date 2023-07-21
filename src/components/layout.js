@@ -7,7 +7,6 @@ import {
   faUser,
   faEnvelope,
   faBlog,
-  faCommentDots,
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
@@ -89,16 +88,6 @@ const Layout = ({ pageTitle, children }) => {
           <li>
             <AniLink paintDrip to="/blog" className={navLinkText} duration={1}>
               <FontAwesomeIcon icon={faBlog} />
-            </AniLink>
-          </li>
-          <li>
-            <AniLink
-              paintDrip
-              to="/testimonial"
-              className={navLinkText}
-              duration={1}
-            >
-              <FontAwesomeIcon icon={faCommentDots} />
             </AniLink>
           </li>
         </ul>
