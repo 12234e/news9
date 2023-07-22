@@ -29,8 +29,8 @@ const IndexPage = () => {
               </p>
               <StaticImage
                 className="my-image"
-                alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-                src="../images/dog.jpg"
+                alt="life"
+                src="../images/life.jpg"
                 width={300}
                 height={200}
               />
@@ -38,7 +38,7 @@ const IndexPage = () => {
           </section>
           <section className="food-section">
             <h1>
-              <Link to="/blog/my-first-post/">Food related</Link>
+              <Link to="/blog/Food releted/">Food related</Link>
             </h1>
             <div>
               <p>
@@ -48,8 +48,8 @@ const IndexPage = () => {
               </p>
               <StaticImage
                 className="my-image"
-                alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-                src="../images/dog.jpg"
+                alt="fruit"
+                src="../images/food.jpg"
                 width={300}
                 height={200}
               />
@@ -67,8 +67,8 @@ const IndexPage = () => {
               </p>
               <StaticImage
                 className="my-image"
-                alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-                src="../images/dog.jpg"
+                alt="international"
+                src="../images/int.jpg"
                 width={300}
                 height={200}
               />
@@ -76,7 +76,7 @@ const IndexPage = () => {
           </section>
           <section className="saudi-arabia-section">
             <h1>
-              <Link to="/blog/yet-another-post/">Saudi Arabia</Link>
+              <Link to="/blog/Saudi Arabia/">Saudi Arabia</Link>
             </h1>
             <div>
               <p>
@@ -86,8 +86,8 @@ const IndexPage = () => {
               </p>
               <StaticImage
                 className="my-image"
-                alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-                src="../images/dog.jpg"
+                alt="Saudi Arabia flag"
+                src="../images/sa.jpg"
                 width={300}
                 height={200}
               />
@@ -105,8 +105,8 @@ const IndexPage = () => {
               </p>
               <StaticImage
                 className="my-image"
-                alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-                src="../images/dog.jpg"
+                alt="a little boy"
+                src="../images/games.jpg"
                 width={300}
                 height={200}
               />
