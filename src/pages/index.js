@@ -38,7 +38,7 @@ const IndexPage = () => {
           </section>
           <section className="food-section">
             <h1>
-              <Link to="/blog/Food releted/">Food related</Link>
+              <Link to="/blog/food-releted/">Food related</Link>
             </h1>
             <div>
               <p>
@@ -57,7 +57,7 @@ const IndexPage = () => {
           </section>
           <section className="international-section">
             <h1>
-              <Link to="/blog/new-post/">International</Link>
+              <Link to="/blog/international/">International</Link>
             </h1>
             <div>
               <p>
@@ -76,7 +76,7 @@ const IndexPage = () => {
           </section>
           <section className="saudi-arabia-section">
             <h1>
-              <Link to="/blog/Saudi Arabia/">Saudi Arabia</Link>
+              <Link to="/blog/saudi-arabia/">Saudi Arabia</Link>
             </h1>
             <div>
               <p>
