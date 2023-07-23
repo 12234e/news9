@@ -21,5 +21,12 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-clarity`,
+      options: {
+        clarity_project_id: "hzye4qgsux",
+        enable_on_dev_env: true,
+      },
+    },
   ],
 }
